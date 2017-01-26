@@ -3,7 +3,8 @@ module.exports = {
     "ecmaVersion": 6,
     "sourceType": "module",
     "ecmaFeatures": {
-      "jsx": true
+      "jsx": true,
+      "experimentalObjectRestSpread": true
     }
   },
   "plugins": [
@@ -17,7 +18,7 @@ module.exports = {
   // Add some rules of our own
   "rules": {
     "indent": ["error", 2], // Two spaces for indent
-    "curly": ["error", "all"], // All require curly braces, even for one line bodies 
+    "curly": ["error", "all"], // All require curly braces, even for one line bodies
     "no-template-curly-in-string": "error", // Guard against accidentally using quotes instead of backticks when writing template strings
     "array-callback-return": "error", // Enforce returning from array functions (map, filter, etc)
     "no-eval": "error",
